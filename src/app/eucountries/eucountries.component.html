@@ -1,0 +1,27 @@
+<h5> <button class="EucountriesComponent"  (click)="onSubmit()">
+  Submit
+</button></h5>
+
+<h1>Countries</h1>
+
+
+<table class="table">
+  <thead>
+    <th scope="col">Name</th>
+    <th scope="col">Currency</th>
+    <th scope="col">CapitalCity</th>
+    <th scope="col">language</th>
+    <th scope="col">flag</th>
+    <th scope="col">callingcode</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let country of countries">
+      <td>{{country.name}}</td>
+      <td>{{country.currency}}</td>
+      <td>{{country.capitalCity }}</td>
+      <td>{{country.language }}</td>
+      <td>{{country.flag }}</td>
+      <td>{{country.callingcode }}</td>
+    </tr>
+  </tbody>
+</table>
